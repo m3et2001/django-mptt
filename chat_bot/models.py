@@ -32,11 +32,11 @@ class chatFlow(MPTTModel):
 
     def __str__(self):
         if self.is_question:
-            return str("Question: "+self.questions)
+            return str("Question: "+ str(self.questions))
         elif self.is_option :
-            return str("Option: "+self.option)
+            return str("Option: "+str(self.option))
         elif self.is_answer :
-            return str("Answer: "+self.answer)
+            return str("Answer: "+ str(self.answer))
 
 
 
